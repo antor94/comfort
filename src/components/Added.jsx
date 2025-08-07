@@ -6,6 +6,7 @@ import images3 from '../assets/images/c-3.png'
 import images4 from '../assets/images/c-4.png'
 import { LuShoppingCart } from "react-icons/lu";
 import Slider from "react-slick";
+import { BsArrowLeft, BsArrowRight } from 'react-icons/bs'
 
 const Added = () => {
 
@@ -16,7 +17,9 @@ const Added = () => {
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 1,
-    adaptiveHeight: true
+    adaptiveHeight: true,
+       nextArrow: <BsArrowRight className=" font-light"  />,
+        prevArrow: <BsArrowLeft  />
   };
 
 
@@ -28,6 +31,7 @@ const Added = () => {
                 <div><h2><Common Head_text={'recently Added'} /></h2></div>
             <div className="fea_row pt-[40px]">
 
+{/* ------------------- slider */}
       <Slider {...settings}>
         <div>
         <div className='w-[312px] h-[377px] overflow-hidden '>

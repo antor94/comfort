@@ -6,8 +6,9 @@ import fimg3 from '../assets/images/f-3.png'
 import fimg4 from '../assets/images/f-4.png'
 import fimg5 from '../assets/images/f-5.png'
 import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import { BsArrowRight } from "react-icons/bs";
+import { BsArrowLeft } from "react-icons/bs";
 
 
 const Category = () => {
@@ -18,7 +19,9 @@ const Category = () => {
     infinite: true,
     slidesToShow: 5,
     slidesToScroll: 5,
-    adaptiveHeight: true
+    adaptiveHeight: true,
+   nextArrow: <BsArrowRight className=" font-light"  />,
+    prevArrow: <BsArrowLeft  />
   }
 
 
@@ -32,6 +35,8 @@ const Category = () => {
           </div>
 
 <div className="pt-[40px]">
+
+{/* ------------------ slider */}
 
       <Slider {...settings}>
         <div>

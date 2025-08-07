@@ -6,9 +6,7 @@ import { LiaShoppingCartSolid } from "react-icons/lia";
 import { FaRegHeart } from "react-icons/fa";
 import { CiUser } from "react-icons/ci";
 import { MdMenu } from "react-icons/md";
-import { MdKeyboardArrowDown } from "react-icons/md";
-import { CiCircleAlert } from "react-icons/ci";
-import { IoCheckmark } from "react-icons/io5";
+
 
 const Navbar = () => {
   return (

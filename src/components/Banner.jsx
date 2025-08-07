@@ -13,6 +13,7 @@ const Banner = () => {
     <>
       <section>
         <div className="container relative">
+          {/* ------------ banner-bg */}
           <div
             style={{
               background: `URL(${banner})`,
@@ -31,6 +32,8 @@ const Banner = () => {
               </button>
             </div>
           </div>
+
+          {/* --------------------- product cart  */}
           <div className="w-[1320px] flex justify-between items-center py-[50px] px-[70px] bg-[#fff] shadow-[0px_10px_20px_0px_rgba(0,_0,_0,_0.1)] rounded-[12px] absolute top-[783px] right-[100px]">
             <div className="flex items-center gap-[16px]">
                 <TfiPackage className="text-[50px]" />

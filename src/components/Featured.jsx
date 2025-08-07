@@ -6,8 +6,8 @@ import images3 from '../assets/images/c-3.png'
 import images4 from '../assets/images/c-4.png'
 import { LuShoppingCart } from "react-icons/lu";
 import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import { BsArrowLeft, BsArrowRight } from 'react-icons/bs'
 
 const Featured = () => {
 
@@ -19,28 +19,22 @@ const Featured = () => {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
+       nextArrow: <BsArrowRight className=" font-light"  />,
+        prevArrow: <BsArrowLeft  />
 };
-
 
 return (
     <>
-
     <section id='featured' className='pt-[32px] pb-[80px]'>
         <div className="container">
                 <div><h2><Common Head_text={'Featured Products'} /></h2></div>
             <div className="fea_row pt-[40px]">
 
+    {/* ------------------- cart slider */}
 
-
-
-
-
-
-
-    {/* ------------------- cart */}
    <Slider {...settings}>
       <div>
-           <div className='w-[312px] h-[377px] overflow-hidden '>
+      <div className='w-[312px] h-[377px] overflow-hidden '>
 
 
                     <div className='h-[312px]'>  <img src={images1} alt="images" />  </div>
@@ -58,7 +52,7 @@ return (
                     </div>
          
 
-                </div>
+        </div>
       </div>
       <div>
         <div className='w-[312px] h-[377px] overflow-hidden '>
@@ -123,10 +117,7 @@ return (
 
                 </div>
       </div>
-
     </Slider>
-
-
             </div>
         </div>
     </section>

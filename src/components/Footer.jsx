@@ -6,7 +6,7 @@ import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaPinterest } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
-import footericon from '../assets/images/Group 13.png'
+
 
 const Footer = () => {
   return (
@@ -16,6 +16,7 @@ const Footer = () => {
         <div className="container ">
           <div className="footer_row pt-[80px] ">
             <div className="flex justify-between items-center" >
+{/*------------------------ 1st div img+ text+ icon  */}
               <div className="pb-[127px]">
                 <img src={footerLogo} alt="footer-logo" />
                 <p className="w-[336px]  py-[35px] text-[16px] font-normal font-inter text-[#272343] ">
@@ -31,8 +32,10 @@ const Footer = () => {
                 <Link className="w-[38px] h-[38px] hover:text-[green] hover:rounded-full hover:border-green-600 hover:border flex justify-center items-center"><FaYoutube /></Link>
                 </div>
               </div>
+
+{/* -------------------- catagory */}
               <div>
-                <label className="text-[14px] font-medium font-inter text-[#9A9CAA]" htmlFor="">Category</label>
+                <h2 className="text-[14px] font-medium font-inter text-[#9A9CAA]">Category</h2>
                 <ul className="pt-[20px] flex flex-col gap-[12px] pb-[60px]">
                     <li><Link className=" text-[16px] font-normal font-inter hover:text-[#007580] hover:border-b hover:border-[#007580] hover:duration-[.3s]  text-[#272343]">Sofa</Link></li>
                     <li><Link className="text-[16px] font-normal font-inter hover:text-[#007580] hover:border-b hover:border-[#007580] hover:duration-[.3s] text-[#272343]">Armchair</Link></li>
@@ -42,7 +45,8 @@ const Footer = () => {
                     <li><Link className="text-[16px] font-normal font-inter hover:text-[#007580] hover:border-b hover:border-[#007580] hover:duration-[.3s] text-[#272343]">Park Bench</Link></li>
                 </ul>
               </div>
-                          <div>
+{/* ---------------------- support  */}
+                 <div>
                 <label className="text-[14px] font-medium font-inter text-[#9A9CAA]" htmlFor="">Support</label>
                 <ul className="pt-[20px] flex flex-col gap-[12px] pb-[120px]">
                     <li><Link className="text-[16px] font-normal font-inter text-[#272343]">Help & Support</Link></li>
@@ -51,6 +55,8 @@ const Footer = () => {
                     <li><Link className="text-[16px] font-normal font-inter text-[#272343]">Help</Link></li>
                 </ul>
               </div>
+
+{/* ----------------------- newsletter  */}
               <div className="pb-[128px]">
                 <label className="text-[14px] font-medium font-inter text-[#9A9CAA]" htmlFor="">Newsletter</label>
                 <div className=" ">
