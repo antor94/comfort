@@ -8,24 +8,18 @@ import  service  from "../assets/images/24-hours.png"
 import { GoArrowRight } from "react-icons/go";
 import { GoArrowLeft } from "react-icons/go";
 
-import "slick-carousel/slick/slick.css";
-import Slider from "react-slick";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+// import required modules
+import { Navigation } from 'swiper/modules';
 
 
 const Banner = () => {
 
-  // ------- slider
- var settings = {
-    dots: true,
-    arrows: false,
-    autoplay: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-      nextArrow: <GoArrowRight />,
-    prevArrow: <GoArrowLeft />
-  };
 
 
 
@@ -34,9 +28,7 @@ const Banner = () => {
       <section>
         <div className="container relative">
           {/* ------------ banner-bg */}
-
-    <Slider {...settings}>
-      <div>
+        {/* <div>
            <div
             style={{
               background: `URL(${banner})`,
@@ -50,14 +42,12 @@ const Banner = () => {
               <h2 className="w-[631px] leading-[110%] mt-[8px] mb-[24px] text-[68px] font-bold font-inter text-[#272343]">Best Furniture Collection for your interior.</h2>
               <button className="w-[171px] bg-[#029FAE] flex justify-around  items-center py-[17px] px-[24px] rounded-[8px] text-[16px] font-inter font-semibold text-[#fff]">Shop Now
                 <IoIosArrowRoundForward className="text-[24px]" />
-
-
               </button>
             </div>
           </div>
-
-      </div>
-      <div>
+      </div> */}
+            <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+        <SwiperSlide>     <div>
            <div
             style={{
               background: `URL(${banner})`,
@@ -71,15 +61,12 @@ const Banner = () => {
               <h2 className="w-[631px] leading-[110%] mt-[8px] mb-[24px] text-[68px] font-bold font-inter text-[#272343]">Best Furniture Collection for your interior.</h2>
               <button className="w-[171px] bg-[#029FAE] flex justify-around  items-center py-[17px] px-[24px] rounded-[8px] text-[16px] font-inter font-semibold text-[#fff]">Shop Now
                 <IoIosArrowRoundForward className="text-[24px]" />
-
-
               </button>
             </div>
           </div>
-
-      </div>
-      <div>
-         <div
+      </div></SwiperSlide>
+        <SwiperSlide>     <div>
+           <div
             style={{
               background: `URL(${banner})`,
               backgroundRepeat: `no-repeat`,
@@ -92,17 +79,12 @@ const Banner = () => {
               <h2 className="w-[631px] leading-[110%] mt-[8px] mb-[24px] text-[68px] font-bold font-inter text-[#272343]">Best Furniture Collection for your interior.</h2>
               <button className="w-[171px] bg-[#029FAE] flex justify-around  items-center py-[17px] px-[24px] rounded-[8px] text-[16px] font-inter font-semibold text-[#fff]">Shop Now
                 <IoIosArrowRoundForward className="text-[24px]" />
-
-
               </button>
             </div>
           </div>
-
-      </div>
-
-    </Slider>
-
-          {/* <div
+      </div></SwiperSlide>
+        <SwiperSlide>     <div>
+           <div
             style={{
               background: `URL(${banner})`,
               backgroundRepeat: `no-repeat`,
@@ -115,14 +97,123 @@ const Banner = () => {
               <h2 className="w-[631px] leading-[110%] mt-[8px] mb-[24px] text-[68px] font-bold font-inter text-[#272343]">Best Furniture Collection for your interior.</h2>
               <button className="w-[171px] bg-[#029FAE] flex justify-around  items-center py-[17px] px-[24px] rounded-[8px] text-[16px] font-inter font-semibold text-[#fff]">Shop Now
                 <IoIosArrowRoundForward className="text-[24px]" />
-
-
               </button>
             </div>
-          </div> */}
+          </div>
+      </div></SwiperSlide>
+        <SwiperSlide>     <div>
+           <div
+            style={{
+              background: `URL(${banner})`,
+              backgroundRepeat: `no-repeat`,
+              backgroundSize: `cover`,
+            }}
+            className="banner_row py-[264px] pl-[210px] rounded-b-[48px]"
+          >
+            <div>
+              <p className="text-[14px] font-normal font-inter text-[#272343]  uppercase">Welcome to chairy</p>
+              <h2 className="w-[631px] leading-[110%] mt-[8px] mb-[24px] text-[68px] font-bold font-inter text-[#272343]">Best Furniture Collection for your interior.</h2>
+              <button className="w-[171px] bg-[#029FAE] flex justify-around  items-center py-[17px] px-[24px] rounded-[8px] text-[16px] font-inter font-semibold text-[#fff]">Shop Now
+                <IoIosArrowRoundForward className="text-[24px]" />
+              </button>
+            </div>
+          </div>
+      </div></SwiperSlide>
+        <SwiperSlide>     <div>
+           <div
+            style={{
+              background: `URL(${banner})`,
+              backgroundRepeat: `no-repeat`,
+              backgroundSize: `cover`,
+            }}
+            className="banner_row py-[264px] pl-[210px] rounded-b-[48px]"
+          >
+            <div>
+              <p className="text-[14px] font-normal font-inter text-[#272343]  uppercase">Welcome to chairy</p>
+              <h2 className="w-[631px] leading-[110%] mt-[8px] mb-[24px] text-[68px] font-bold font-inter text-[#272343]">Best Furniture Collection for your interior.</h2>
+              <button className="w-[171px] bg-[#029FAE] flex justify-around  items-center py-[17px] px-[24px] rounded-[8px] text-[16px] font-inter font-semibold text-[#fff]">Shop Now
+                <IoIosArrowRoundForward className="text-[24px]" />
+              </button>
+            </div>
+          </div>
+      </div></SwiperSlide>
+        <SwiperSlide>     <div>
+           <div
+            style={{
+              background: `URL(${banner})`,
+              backgroundRepeat: `no-repeat`,
+              backgroundSize: `cover`,
+            }}
+            className="banner_row py-[264px] pl-[210px] rounded-b-[48px]"
+          >
+            <div>
+              <p className="text-[14px] font-normal font-inter text-[#272343]  uppercase">Welcome to chairy</p>
+              <h2 className="w-[631px] leading-[110%] mt-[8px] mb-[24px] text-[68px] font-bold font-inter text-[#272343]">Best Furniture Collection for your interior.</h2>
+              <button className="w-[171px] bg-[#029FAE] flex justify-around  items-center py-[17px] px-[24px] rounded-[8px] text-[16px] font-inter font-semibold text-[#fff]">Shop Now
+                <IoIosArrowRoundForward className="text-[24px]" />
+              </button>
+            </div>
+          </div>
+      </div></SwiperSlide>
+        <SwiperSlide>     <div>
+           <div
+            style={{
+              background: `URL(${banner})`,
+              backgroundRepeat: `no-repeat`,
+              backgroundSize: `cover`,
+            }}
+            className="banner_row py-[264px] pl-[210px] rounded-b-[48px]"
+          >
+            <div>
+              <p className="text-[14px] font-normal font-inter text-[#272343]  uppercase">Welcome to chairy</p>
+              <h2 className="w-[631px] leading-[110%] mt-[8px] mb-[24px] text-[68px] font-bold font-inter text-[#272343]">Best Furniture Collection for your interior.</h2>
+              <button className="w-[171px] bg-[#029FAE] flex justify-around  items-center py-[17px] px-[24px] rounded-[8px] text-[16px] font-inter font-semibold text-[#fff]">Shop Now
+                <IoIosArrowRoundForward className="text-[24px]" />
+              </button>
+            </div>
+          </div>
+      </div></SwiperSlide>
+        <SwiperSlide>     <div>
+           <div
+            style={{
+              background: `URL(${banner})`,
+              backgroundRepeat: `no-repeat`,
+              backgroundSize: `cover`,
+            }}
+            className="banner_row py-[264px] pl-[210px] rounded-b-[48px]"
+          >
+            <div>
+              <p className="text-[14px] font-normal font-inter text-[#272343]  uppercase">Welcome to chairy</p>
+              <h2 className="w-[631px] leading-[110%] mt-[8px] mb-[24px] text-[68px] font-bold font-inter text-[#272343]">Best Furniture Collection for your interior.</h2>
+              <button className="w-[171px] bg-[#029FAE] flex justify-around  items-center py-[17px] px-[24px] rounded-[8px] text-[16px] font-inter font-semibold text-[#fff]">Shop Now
+                <IoIosArrowRoundForward className="text-[24px]" />
+              </button>
+            </div>
+          </div>
+      </div></SwiperSlide>
+        <SwiperSlide>     <div>
+           <div
+            style={{
+              background: `URL(${banner})`,
+              backgroundRepeat: `no-repeat`,
+              backgroundSize: `cover`,
+            }}
+            className="banner_row py-[264px] pl-[210px] rounded-b-[48px]"
+          >
+            <div>
+              <p className="text-[14px] font-normal font-inter text-[#272343]  uppercase">Welcome to chairy</p>
+              <h2 className="w-[631px] leading-[110%] mt-[8px] mb-[24px] text-[68px] font-bold font-inter text-[#272343]">Best Furniture Collection for your interior.</h2>
+              <button className="w-[171px] bg-[#029FAE] flex justify-around  items-center py-[17px] px-[24px] rounded-[8px] text-[16px] font-inter font-semibold text-[#fff]">Shop Now
+                <IoIosArrowRoundForward className="text-[24px]" />
+              </button>
+            </div>
+          </div>
+      </div></SwiperSlide>
+      </Swiper>
+
 
           {/* --------------------- product cart  */}
-          <div className="w-[1320px] flex justify-between items-center py-[50px] px-[70px] bg-[#fff] shadow-[0px_10px_20px_0px_rgba(0,_0,_0,_0.1)] rounded-[12px] absolute top-[783px] right-[100px]">
+          <div className="w-[1320px] flex justify-between items-center py-[50px] px-[70px] bg-[#fff] shadow-[0px_10px_20px_0px_rgba(0,_0,_0,_0.1)] rounded-[12px] z-999 absolute top-[783px] right-[100px]">
             <div className="flex items-center gap-[16px]">
                 <TfiPackage className="text-[50px]" />
               <div>
