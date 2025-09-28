@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <>
     
-
+{/* --------------- main-nav */}
 
     <nav className='py-[20px] bg-[#F0F2F3]'>
         <div className="container" >
@@ -41,6 +41,9 @@ const Navbar = () => {
             </div>
         </div>
     </nav>
+
+
+    {/* ------------------ category option */}
 
     <nav className='border-b-1 border-[#E5E5E5]'>
         <div className="container">
