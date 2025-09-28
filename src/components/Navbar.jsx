@@ -29,17 +29,17 @@ const Navbar = () => {
                     <div className='w-[120px] bg-[#fff] rounded-[8px] py-[11px] px-[16px]  flex justify-between items-center'>
                         <LiaShoppingCartSolid />
                         <p className='text-[12px] font-medium font-inter text-[#272343]'>Cart</p>
-                        <div className='w-[20px] h-[20px] bg-[#007580] rounded-full flex justify-center items-center'><p className='text-[10px] font-medium font-dm text-[#fff] '>2</p></div>
+                        <button className='w-[20px] h-[20px] bg-[#007580] rounded-full flex justify-center items-center'><p className='text-[10px] font-medium font-dm text-[#fff] '>2</p></button>
 
                     </div>
-                    <div className='w-[44px] h-[44px] bg-[#fff] rounded-[8px] flex justify-center items-center'>
+                    <button className='w-[44px] h-[44px] bg-[#fff] rounded-[8px] flex justify-center items-center'>
                         <FaRegHeart  className='text-[22px]'/>
 
-                    </div>
-                    <div className='w-[44px] h-[44px] bg-[#fff] rounded-[8px] flex justify-center items-center'>
+                    </button>
+                    <Link to={'/login'} className='w-[44px] h-[44px] bg-[#fff] rounded-[8px] flex justify-center items-center'>
                         <CiUser  className='text-[22px]'/>
 
-                    </div>
+                    </Link>
                 </div>
             </div>
         </div>
