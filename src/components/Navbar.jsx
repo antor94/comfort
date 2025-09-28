@@ -26,12 +26,11 @@ const Navbar = () => {
 
                 </div>
                 <div className='flex justify-between items-center gap-[12px]'>
-                    <div className='w-[120px] bg-[#fff] rounded-[8px] py-[11px] px-[16px]  flex justify-between items-center'>
-                        <LiaShoppingCartSolid />
-                        <p className='text-[12px] font-medium font-inter text-[#272343]'>Cart</p>
-                        <button className='w-[20px] h-[20px] bg-[#007580] rounded-full flex justify-center items-center'><p className='text-[10px] font-medium font-dm text-[#fff] '>2</p></button>
+                    <button className='w-[120px] bg-[#fff] rounded-[8px] py-[11px] px-[16px] text-[14px] font-medium font-inter text-[#272343]  flex justify-between items-center'>
+                        <LiaShoppingCartSolid className='text-[22px]' /> Cart
+                        {/* <button className='w-[20px] h-[20px] bg-[#007580] rounded-full flex justify-center items-center'><p className='text-[10px] font-medium font-dm text-[#fff] '>2</p></button> */}
 
-                    </div>
+                    </button>
                     <button className='w-[44px] h-[44px] bg-[#fff] rounded-[8px] flex justify-center items-center'>
                         <FaRegHeart  className='text-[22px]'/>
 
