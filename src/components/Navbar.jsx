@@ -26,16 +26,14 @@ const Navbar = () => {
 
                 </div>
                 <div className='flex justify-between items-center gap-[12px]'>
-                    <button className='w-[120px] bg-[#fff] rounded-[8px] py-[11px] px-[16px] text-[14px] font-medium font-inter text-[#272343]  flex justify-between items-center'>
-                        <LiaShoppingCartSolid className='text-[22px]' /> Cart
-                        {/* <button className='w-[20px] h-[20px] bg-[#007580] rounded-full flex justify-center items-center'><p className='text-[10px] font-medium font-dm text-[#fff] '>2</p></button> */}
-
+                    <button className='w-[120px] bg-[#fff]  hover:bg-[#007580] duration-[.4s] hover:text-white  rounded-[8px] py-[11px] px-[16px] text-[14px] font-medium font-inter text-[#272343]  flex justify-between items-center'>
+                        <LiaShoppingCartSolid className='text-[22px]' /> Cart <span className='w-[20px] h-[20px] bg-[#007580] rounded-full flex justify-center items-center text-[12px] font-medium font-dm text-[#fff] '>2</span>
                     </button>
-                    <button className='w-[44px] h-[44px] bg-[#fff] rounded-[8px] flex justify-center items-center'>
+                    <button className='w-[44px] h-[44px] hover:bg-[#007580] duration-[.4s] hover:text-white   bg-[#fff] rounded-[8px] flex justify-center items-center'>
                         <FaRegHeart  className='text-[22px]'/>
 
                     </button>
-                    <Link to={'/login'} className='w-[44px] h-[44px] bg-[#fff] rounded-[8px] flex justify-center items-center'>
+                    <Link to={'/login'} className='w-[44px] h-[44px] hover:bg-[#007580] duration-[.4s] hover:text-white   bg-[#fff] rounded-[8px] flex justify-center items-center'>
                         <CiUser  className='text-[22px]'/>
 
                     </Link>
@@ -44,7 +42,7 @@ const Navbar = () => {
         </div>
     </nav>
 
-    <section className='border-b-1'>
+    <nav className='border-b-1 border-[#E5E5E5]'>
         <div className="container">
             <div className="nav-Row flex justify-between items-center py-[14px] ">
                 <div className='w-[176px] py-[16px] px-[24px] border border-[#E1E3E5] rounded-[6px] flex justify-between items-center'>
@@ -67,8 +65,8 @@ const Navbar = () => {
                 </div>
             </div>
         </div>
-    {/* <span className='w-full inline-block border border-[#E5E5E5]'></span> */}
-    </section>
+
+    </nav>
     
     
     
