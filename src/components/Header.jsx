@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <>
 
-    <section className='w-full bg-[#272343]'>
+    <header id='header' className='w-full bg-[#272343]'>
         <div className="container">
             <div className="head-row py-[15px] flex justify-between items-center">
                 <div className='flex justify-between items-center gap-[8px]'>
@@ -30,7 +30,7 @@ const Header = () => {
             </div>
         </div>
 
-    </section>
+    </header>
 
     
     

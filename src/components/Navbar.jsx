@@ -14,7 +14,7 @@ const Navbar = () => {
     
 
 
-    <section className='py-[20px] bg-[#F0F2F3]'>
+    <nav className='py-[20px] bg-[#F0F2F3]'>
         <div className="container" >
             <div className="navbar_row flex justify-between items-center">
                 <Link to={'/'}>
@@ -43,7 +43,7 @@ const Navbar = () => {
                 </div>
             </div>
         </div>
-    </section>
+    </nav>
 
     <section className='border-b-1'>
         <div className="container">

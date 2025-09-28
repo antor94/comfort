@@ -11,7 +11,7 @@ import { FaYoutube } from "react-icons/fa";
 const Footer = () => {
   return (
     <>
-      <section id="footer" className="border-t-2 border-red-30 ">
+      <footer id="footer" className="border-t-2 border-red-30 ">
           <div className="border-b-2">
         <div className="container ">
           <div className="footer_row pt-[80px] ">
@@ -70,7 +70,7 @@ const Footer = () => {
           </div>
         </div>
           </div>
-      </section>
+      </footer>
     </>
   );
 };
